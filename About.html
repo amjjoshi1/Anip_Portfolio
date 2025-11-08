@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 1. Title is for the "Home" page -->
-    <title>Anip Joshi - Professional Portfolio (Home)</title>
+    <!-- 1. Title is for the "About" page -->
+    <title>Anip Joshi - Professional Portfolio (About)</title>
     <!-- 1. We're loading Tailwind CSS, which provides all the styling classes -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -45,39 +44,37 @@
             
             <!-- Navigation Links -->
             <nav class="flex space-x-4">
-                <!-- "Home" is the active page -->
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="about.html" class="nav-link">About</a>
+                <a href="index.html" class="nav-link">Home</a>
+                <!-- "About" is the active page -->
+                <a href="about.html" class="nav-link active">About</a>
                 <a href="artifacts.html" class="nav-link">Artifacts</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
         </header>
 
-        <!-- Hero Section -->
+        <!-- About Me Section -->
         <main class="mt-16 sm:mt-24">
-            <!-- This section is for the "Home" page content -->
-            <section id="home">
-                <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">
-                    AI Evaluation, Customization, and Application
-                </h1>
-                
-                <!-- UPDATED: Short bio summary for home page -->
-                <p class="mt-6 text-lg text-gray-700 max-w-2xl">
-                    Welcome to my portfolio. I'm an AI/ML enthusiast focused on building human-centered, data-driven solutions.
-                </p>
-
-                <!-- NEW: Button to About page -->
-                 <a href="about.html" 
-                   class="inline-block mt-8 px-6 py-3 rounded-lg bg-blue-600 text-white font-medium transition-colors duration-200 hover:bg-blue-500">
-                    Learn more about me →
-                 </a>
-                
-                <!-- Skill Tags (adjusted margin) -->
-                <div class="mt-8 flex flex-wrap gap-3">
-                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">AI/ML</span>
-                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Data Engineering</span>
-                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Visualization</span>
-                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Business Analysis</span>
+            <section id="about">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">About Me</h2>
+                <div class="flex flex-col md:flex-row md:items-center md:gap-12">
+                    <!-- Your Photo -->
+                    <div class="flex-shrink-0 mb-8 md:mb-0">
+                        <!-- Make sure DV.jpeg is in the same folder! -->
+                        <img src="./DV.jpeg" alt="Anip Man Joshi" 
+                             class="rounded-full w-48 h-48 sm:w-64 sm:h-64 mx-auto md:mx-0 object-cover border-4 border-gray-200 shadow-lg"
+                             onerror="this.src='https://placehold.co/256x256/e0e0e0/333333?text=Anip+Joshi'; this.onerror=null;">
+                    </div>
+                    
+                    <!-- Your Bio -->
+                    <div class="flex-grow">
+                        <h3 class="text-2xl font-bold text-gray-800">Hi, I'm Anip</h3>
+                        <p class="mt-4 text-lg text-gray-700 max-w-2xl">
+                            I'm a student at Indiana Wesleyan University, living in Dallas. I am enthusiastic about technology, and I am currently studying machine learning and artificial intelligence.
+                        </p>
+                        <p class="mt-4 text-lg text-gray-700 max-w-2xl">
+                            My focus is on designing human-centered, data-driven solutions with clear communication and reproducible workflows.
+                        </p>
+                    </div>
                 </div>
             </section>
         </main>
