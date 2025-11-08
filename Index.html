@@ -1,1 +1,103 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1. Title is for the "Home" page -->
+    <title>Anip Joshi - Professional Portfolio (Home)</title>
+    <!-- 1. We're loading Tailwind CSS, which provides all the styling classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- 2. We're loading the "Inter" font, which is a clean, modern font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- 3. These are custom styles to match the new light theme -->
+    <style>
+        body {
+            /* This is the new white background color */
+            background-color: #ffffff; 
+            /* This sets the default font for the whole page */
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Just a little tweak for the navigation links */
+        .nav-link {
+            @apply text-gray-500 transition-colors duration-200 hover:text-gray-900;
+        }
+        /* This new style highlights the current page */
+        .nav-link.active {
+            @apply text-blue-600 font-bold;
+        }
+    </style>
+</head>
+<body class="text-gray-900 flex flex-col min-h-screen">
+
+    <!-- Main content container -->
+    <div class="container mx-auto max-w-4xl px-4 py-8 flex-grow">
+
+        <!-- Header & Navigation -->
+        <header class="flex flex-col sm:flex-row justify-between sm:items-center space-y-4 sm:space-y-0">
+            <!-- Your Name & Title -->
+            <a href="index.html" class="text-gray-900 text-xl font-bold">Anip Joshi - Professional Portfolio</a>
+            
+            <!-- Navigation Links -->
+            <nav class="flex space-x-4">
+                <!-- "Home" is the active page -->
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="artifacts.html" class="nav-link">Artifacts</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <main class="mt-16 sm:mt-24">
+            <!-- This section is for the "Home" page content -->
+            <section id="home">
+                <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">
+                    AI Evaluation, Customization, and Application
+                </h1>
+                
+                <!-- UPDATED: Short bio summary for home page -->
+                <p class="mt-6 text-lg text-gray-700 max-w-2xl">
+                    Welcome to my portfolio. I'm an AI/ML enthusiast focused on building human-centered, data-driven solutions.
+                </p>
+
+                <!-- NEW: Button to About page -->
+                 <a href="about.html" 
+                   class="inline-block mt-8 px-6 py-3 rounded-lg bg-blue-600 text-white font-medium transition-colors duration-200 hover:bg-blue-500">
+                    Learn more about me →
+                 </a>
+                
+                <!-- Skill Tags (adjusted margin) -->
+                <div class="mt-8 flex flex-wrap gap-3">
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">AI/ML</span>
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Data Engineering</span>
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Visualization</span>
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Business Analysis</span>
+                </div>
+            </section>
+        </main>
+    </div> <!-- End of main container -->
+
+    <!-- Footer -->
+    <footer id="contact-footer" class="mt-16 py-8 border-t border-gray-200 text-center text-gray-500 w-full">
+        <div class="container mx-auto max-w-4xl px-4">
+            <div class="flex justify-center space-x-6">
+                <!-- Replace '#' with your actual links -->
+                <a href="mailto:your-email@example.com" class="hover:text-gray-900">Email</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-gray-900">LinkedIn</a>
+                <!-- Fixed the GitHub link -->
+                <a href="https://github.com/anip-man-joshi" target="_blank" rel="noopener noreferrer" class="hover:text-gray-900">GitHub</a>
+            </div>
+            <p class="mt-6 text-sm">
+                © 2025 Anip Man Joshi. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
